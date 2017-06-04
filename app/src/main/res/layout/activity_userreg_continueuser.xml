@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_title_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollbars="none"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/app_line_color" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="25dp"
+                android:text="@string/youphoto"
+                android:textColor="#909090"
+                android:textSize="17dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="13dp">
+
+                <ImageView
+                    android:id="@+id/photo"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/app_default_user" />
+
+                <ImageView
+                    android:id="@+id/camrea"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignRight="@+id/photo"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginRight="12dp"
+                    android:src="@mipmap/user_photo_icon" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="3dp"
+                android:text="@string/youpname"
+                android:textColor="#909090"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="fill_parent"
+                android:layout_height="49dp"
+                android:layout_marginBottom="13dp"
+                android:layout_marginLeft="33dp"
+                android:layout_marginRight="33dp"
+                android:layout_marginTop="13dp"
+                android:background="@drawable/user_login_input_back"
+                android:gravity="center_vertical"
+                android:inputType="text"
+                android:maxLength="20"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/app_text_color3"
+                android:textSize="17dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/user_info_gender"
+                android:textColor="#909090"
+                android:textSize="17dp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="49dp"
+                android:layout_marginBottom="13dp"
+                android:layout_marginLeft="33dp"
+                android:layout_marginRight="33dp"
+                android:layout_marginTop="13dp">
+
+                <TextView
+                    android:id="@+id/female"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/activity_userreg_continueuser_genderbg_selector"
+                    android:gravity="center"
+                    android:text="femail"
+                    android:textColor="@color/user_continue_gender_textcolor"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:id="@+id/male"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/activity_userreg_continueuser_genderbg_selector"
+                    android:gravity="center"
+                    android:text="mail"
+                    android:textColor="@color/user_continue_gender_textcolor"
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="33dp"
+                android:layout_marginRight="33dp"
+                android:layout_marginTop="30dp"
+                android:background="#FBD5D9"
+                android:text="@string/continuestring"
+                android:textColor="@color/white"
+                android:textSize="17dp" />
+
+            <Button
+                android:id="@+id/skip"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="33dp"
+                android:layout_marginRight="33dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/activitry_userreg_continueuser_skipbg"
+                android:text="@string/skip"
+                android:textColor="@color/white"
+                android:textSize="17dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

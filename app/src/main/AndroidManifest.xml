@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jws.pandahealth">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- easemob Required -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:name=".component.MyApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".component.app.ui.activity.WelcomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".component.app.ui.activity.UserRegActivity" />
+        <activity android:name=".component.app.ui.activity.WebViewActivity" />
+        <activity android:name=".component.app.ui.activity.UserFindPwdActivity" />
+        <activity android:name=".component.app.ui.activity.LoginActivity" />
+        <activity android:name=".component.askdoctor.ui.activity.QuestionNewActivity" />
+        <activity android:name=".component.askdoctor.ui.activity.FindDoctorActivity" />
+        <activity android:name=".component.askdoctor.ui.activity.FindDoctorListActivity" />
+        <activity android:name=".component.app.ui.activity.AppGuideActivity" />
+        <activity android:name=".component.app.ui.activity.AppLoadingActivity" />
+        <activity
+            android:name=".component.askdoctor.view.photo.ImageGridActivity"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity
+            android:name=".component.askdoctor.view.photo.PhotoActivity"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity
+            android:name=".component.askdoctor.view.imagezoom.ImageViewShowActivity"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity
+            android:name=".component.app.ui.activity.MainActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".component.app.ui.activity.ContinueUserMessageActivity" />
+        <activity android:name=".component.askdoctor.ui.activity.DoctorActivity" />
+        <activity
+            android:name=".component.services.ui.activity.ChatActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".component.services.ui.activity.ChatDisplayActivity" />
+        <activity android:name=".component.askdoctor.view.photo.util.BitmapCache" />
+        <activity android:name=".component.services.ui.activity.PayActivity" />
+        <activity
+            android:name=".component.services.ui.activity.DialogActivity"
+            android:theme="@style/DialogActivityStyle" />
+        <activity android:name=".component.more.ui.activity.UserInfoActivity" />
+        <activity android:name=".component.more.ui.activity.SettingActivity" />
+        <activity android:name=".component.more.ui.activity.UserCenterClipActivity" />
+        <activity android:name=".component.more.ui.activity.NotificationsActivity" />
+        <activity android:name=".component.more.ui.activity.UserUpdateInfoActivity" />
+        <activity android:name=".component.more.ui.activity.UpdatePwdActivity" />
+        <activity android:name=".component.more.ui.activity.UserUpdateRegionActivity" />
+        <activity android:name="com.hyphenate.easeui.ui.EaseShowBigImageActivity" />
+
+        <!-- 设置环信应用的AppKey -->
+        <meta-data
+            android:name="EASEMOB_APPKEY"
+            android:value="1120161129178118#pandahealth" />
+        <!-- 声明SDK所需的service SDK核心功能 -->
+
+        <service
+            android:name="com.hyphenate.chat.EMChatService"
+            android:exported="true" />
+
+        <service
+            android:name="com.hyphenate.chat.EMJobService"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <!-- easmob require -->
+        <!-- 声明SDK所需的receiver -->
+        <receiver android:name="com.hyphenate.chat.EMMonitorReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+            <!-- 可选filter -->
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".component.services.ui.activity.PayWebActivity" />
+        <activity android:name=".component.services.ui.activity.ServicesListActivity" />
+    </application>
+
+</manifest>

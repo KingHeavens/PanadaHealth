@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:id="@+id/services_activity_pay"
+        android:layout_width="300dp"
+        android:layout_height="450dp"
+        android:background="@drawable/shape_avatar_bg"
+        >
+        <TextView
+            android:id="@+id/close"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:textColor="@color/white"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/services_unread_dot"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:text="×"
+            />
+        <View
+            android:id="@+id/empty"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_below="@id/layout_doctor_info"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_type"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/red"
+            android:textSize="45sp"
+            tools:text="39" />
+
+        <TextView
+            android:id="@+id/tv_money_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_amount"
+            android:layout_marginEnd="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="8dp"
+            android:layout_toLeftOf="@id/tv_amount"
+            android:layout_toStartOf="@id/tv_amount"
+            android:textColor="@color/red"
+            android:textSize="16sp"
+            tools:text="$" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_amount"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="24dp"
+            android:textColor="@color/red"
+            tools:text="For 24 hours" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/app_line_height"
+            android:layout_below="@id/tv_time"
+            android:background="@color/app_line_color" />
+
+        <Button
+            android:id="@+id/btn_pay"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/more_btn_selector"
+            android:text="@string/pay_btn_text"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+        <include
+            android:id="@+id/layout_doctor_info"
+            layout="@layout/services_include_doctor_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/empty"
+            android:layout_toEndOf="@+id/empty" />
+
+        <TextView
+            android:id="@+id/tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/text_color_name"
+            android:textSize="16sp"
+            tools:text="TextChat"
+            android:layout_below="@+id/layout_doctor_info"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+</LinearLayout>

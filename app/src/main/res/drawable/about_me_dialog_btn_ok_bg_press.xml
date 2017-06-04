@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 设置ListView背景Item背景 -->
+    <solid android:color="@color/about_me_item_click_normal" />
+    <!-- 设置边缘四周颜色 以及边缘线的宽度 -->
+    
+    <corners 
+        android:bottomRightRadius="5dp"
+         />
+
+</shape>

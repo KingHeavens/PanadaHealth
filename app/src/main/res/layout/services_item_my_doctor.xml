@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="15dp"
+   >
+
+    <ImageView
+        android:id="@+id/iv_avatar"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/shape_avatar_bg" />
+
+    <ImageView
+        android:id="@+id/iv_badge"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_toRightOf="@id/iv_avatar"
+        android:layout_toEndOf="@id/iv_avatar"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@mipmap/finddoctor_badge"
+        android:visibility="visible"
+        android:layout_alignTop="@id/iv_avatar"
+        />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_badge"
+        android:layout_toEndOf="@id/iv_badge"
+        android:layout_alignTop="@id/iv_avatar"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="0dp"
+        android:lines="1"
+        android:ellipsize="end"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_color_name"
+        tools:text="Dr.Cai YouLing" />
+
+    <TextView
+        android:id="@+id/tv_professor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/tv_name"
+        android:layout_toRightOf="@id/tv_name"
+        android:layout_toEndOf="@id/tv_name"
+        android:layout_marginTop="2dp"
+        android:textSize="14sp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="@color/text_color_office"
+        tools:text="Chief physician" />
+
+    <TextView
+        android:id="@+id/tv_office"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:layout_toRightOf="@id/iv_badge"
+        android:layout_toEndOf="@id/iv_badge"
+        android:textSize="14sp"
+        android:lines="1"
+        android:ellipsize="end"
+        android:textColor="@color/text_color_office"
+        tools:text="Chinese medical"/>
+
+    <TextView
+        android:id="@+id/tv_hospital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_office"
+        android:layout_toRightOf="@id/iv_badge"
+        android:layout_toEndOf="@id/iv_badge"
+        android:ellipsize="end"
+        android:textSize="14sp"
+        android:lines="1"
+        android:textColor="@color/text_color_hospital"
+        tools:text="Peking Union Medical College Hospital"/>
+    <TextView
+        android:id="@+id/tv_be_good_at"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_hospital"
+        android:layout_toRightOf="@id/iv_badge"
+        android:layout_toEndOf="@id/iv_badge"
+        android:textSize="14sp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:layout_marginBottom="3dp"
+        android:textColor="@color/text_color_hospital"
+        tools:text="Good skin pathological"/>
+    <ImageView
+        android:id="@+id/iv_text"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_toRightOf="@id/iv_badge"
+        android:layout_toEndOf="@id/iv_badge"
+        android:layout_below="@id/tv_be_good_at"
+        android:layout_marginRight="10dp"
+        android:src="@mipmap/finddoctor_department_selected"
+        />
+    <ImageView
+        android:id="@+id/iv_phone"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_toRightOf="@id/iv_text"
+        android:layout_toEndOf="@id/iv_text"
+        android:layout_below="@id/tv_be_good_at"
+        android:layout_marginRight="10dp"
+        android:src="@mipmap/finddoctor_phone"
+        />
+    <ImageView
+        android:id="@+id/iv_private_doctor"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_toRightOf="@id/iv_phone"
+        android:layout_toEndOf="@id/iv_phone"
+        android:layout_below="@id/tv_be_good_at"
+        android:layout_marginRight="5dp"
+        android:src="@mipmap/finddoctor_private"
+        />
+</RelativeLayout>

@@ -1,0 +1,198 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
+apply plugin: 'realm-android'
+//apply plugin: 'com.jakewharton.butterknife'
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    androidTestCompile 'com.android.support:support-annotations:24.1.1'
+    configurations.all {
+        resolutionStrategy.force 'com.android.support:support-annotations:24.1.1'
+    }
+    androidTestCompile 'com.android.support.test:runner:0.5'
+    androidTestCompile 'com.android.support.test:rules:0.5'
+    //ui
+    compile 'com.android.support:appcompat-v7:24.1.1'
+    compile 'com.android.support:design:24.1.1'
+    compile ('com.android.support:recyclerview-v7:24.1.1')
+    compile 'com.android.support:cardview-v7:24.1.1'
+    //page tab https://github.com/HomHomLin/AdvancedPagerSlidingTabStrip
+    compile 'homhomlin.lib:apsts:1.4.0'
+    //BaseRecyclerView  更新版本的话把后面的1替换成versonCode
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.6.9'
+    compile 'com.github.anzaizai:EasyRefreshLayout:1.1.2'
+    //rx
+    compile 'io.reactivex:rxjava:1.1.0'
+    compile 'io.reactivex:rxandroid:1.1.0'
+    compile 'com.jakewharton.rxbinding:rxbinding:0.4.0'
+    //network
+    compile 'com.google.code.gson:gson:2.4'
+    compile 'com.squareup.retrofit2:retrofit:2.0.2'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.2'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.0.2'
+    compile 'com.squareup.okhttp3:okhttp:3.2.0'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.0.1'
+    //di
+    compile 'com.google.dagger:dagger:2.0.2'
+    compile 'com.google.dagger:dagger-compiler:2.0.2'
+    provided 'org.glassfish:javax.annotation:10.0-b28'
+    //other
+    compile 'com.orhanobut:logger:1.8'
+//    compile 'com.orhanobut:logger:1.15'
+    compile 'me.yokeyword:fragmentation:0.7.9'
+    compile 'pub.devrel:easypermissions:0.2.0'
+    //widget
+    compile 'com.prolificinteractive:material-calendarview:1.4.0'
+    compile 'net.opacapp:multiline-collapsingtoolbar:1.2.2'
+    compile 'com.github.chrisbanes:PhotoView:1.3.0'
+    compile 'com.miguelcatalan:materialsearchview:1.4.0'
+    compile 'jp.wasabeef:glide-transformations:1.2.1'
+    //canary
+//    debugCompile 'com.github.moduth:blockcanary-android:1.2.1'
+//    releaseCompile 'com.github.moduth:blockcanary-no-op:1.2.1'
+//    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.4-beta2'
+//    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.4-beta2'
+    //Chrome 调试Android 程序
+    debugCompile 'com.facebook.stetho:stetho-okhttp3:1.4.1'
+    debugCompile 'com.facebook.stetho:stetho:1.4.1'
+    debugCompile 'com.uphyca:stetho_realm:2.0.0'
+    //dialog
+    //butterknife
+    /*compile 'com.jakewharton:butterknife:8.4.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'*/
+    compile 'com.jakewharton:butterknife:8.4.0'
+    apt 'com.jakewharton:butterknife-compiler:8.4.0'
+
+    //环信
+    compile project(':easeui')
+    compile 'com.android.support:multidex:1.0.0'
+    compile 'com.yanzhenjie:permission:1.0.3'
+}
+
+android {
+    compileSdkVersion ANDROID_BUILD_SDK_VERSION as int
+    buildToolsVersion ANDROID_BUILD_TOOLS_VERSION
+    useLibrary 'org.apache.http.legacy'
+    defaultConfig {
+        minSdkVersion ANDROID_BUILD_MIN_SDK_VERSION as int
+        targetSdkVersion ANDROID_BUILD_TARGET_SDK_VERSION as int
+        versionCode VERSION_CODE as int
+        versionName VERSION_NAME
+        multiDexEnabled true // dex突破65535的限制
+        applicationId PACKAGE_NAME // <--您应用的包名
+        renderscriptTargetApi 23 //图片处理
+        renderscriptSupportModeEnabled true
+    }
+
+
+    //Android默认配置
+    sourceSets {
+        main {
+            assets.srcDirs = ['assets']//指定assets目录
+        }
+        //测试所在的路径，这里假设是tests文件夹，没有可以不写这一行
+        instrumentTest.setRoot('tests')
+        debug.setRoot('build-types/debug')//指定debug模式的路径
+        release.setRoot('build-types/release')//指定release模式的路径
+
+    }
+
+    //签名设置
+    signingConfigs {
+        debug {
+            storeFile file(RELEASE_STOREFILE)
+            storePassword RELEASE_STORE_PASSWORD
+            keyAlias RELEASE_KEY_ALIAS
+            keyPassword RELEASE_KEY_PASSWORD
+        }
+
+        release {
+            storeFile file(RELEASE_STOREFILE)
+            storePassword RELEASE_STORE_PASSWORD
+            keyAlias RELEASE_KEY_ALIAS
+            keyPassword RELEASE_KEY_PASSWORD
+        }
+    }
+
+    //构建设置
+    buildTypes {
+
+        debug {
+            manifestPlaceholders = [app_label: "@string/app_name_debug"]
+            minifyEnabled true //混淆处理
+            debuggable true // 保留debug信息
+            shrinkResources false //是否开启优化 去除无用资源
+            //applicationIdSuffix ".debug" //增加APP ID的后缀
+            signingConfig signingConfigs.debug
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard.cfg'
+        }
+
+        release {
+            manifestPlaceholders = [app_label: "@string/app_name"]
+            minifyEnabled true //混淆处理
+            debuggable true // 保留debug信息
+            shrinkResources true //是否开启优化 去除无用资源
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard.cfg'
+        }
+
+//      preview{
+//        用户预览版
+//     }
+    }
+    //渠道打包
+    productFlavors {
+        other {}//其它小市场(默认)
+//        google {}
+//        c360 {}//360
+//        baidu {}//百度
+//        android {}//安卓市场
+//        c91 {}//91
+//        anzhi {}//安智
+//        sougou {}//搜狗手机助手
+//        taobao {}//淘宝手机助手
+//        yingyongbao {}//应用宝
+//        wandoujia {}//豌豆荚
+//        xiaomi {}//小米应用
+//        yingyonghui {}//应用汇
+//        oppo {}//OPPO应用商店
+//        huawei {}//华为开发者联盟
+//        jinli {}//金立应用商店
+//        lianxiang {}//联想乐商店
+//        meizu {}//魅族应用商店
+//        sanxing {}//三星应用商店
+    }
+
+    productFlavors.all { flavor ->
+        flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
+    }
+
+    applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            output.outputFile = new File(
+                    output.outputFile.parent + "/${variant.buildType.name}",
+                    "pandahealth-${variant.buildType.name}-${variant.versionName}-${variant.productFlavors[0].name}.apk".toLowerCase())
+        }
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+
+    lintOptions {
+        abortOnError false //lint时候终止错误上报,防止编译的时候莫名的失败
+        checkReleaseBuilds false
+        disable 'MissingTranslation'
+    }
+
+}
+
+
+allprojects {
+    gradle.projectsEvaluated {
+        tasks.withType(JavaCompile) {
+            options.compilerArgs << "-Xlint:unchecked" << "-Xlint:deprecation"
+        }
+    }
+}

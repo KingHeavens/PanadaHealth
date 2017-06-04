@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 设置边缘四周颜色 以及边缘线的宽度 -->
+    <corners android:radius="6dip" />
+
+    <!-- 填充 -->
+    <solid android:color="@android:color/white" />
+
+    <!-- 描边 -->
+    <stroke
+        android:width="0.1dp"
+        android:color="@color/dialog_stroke_color" />
+
+</shape>

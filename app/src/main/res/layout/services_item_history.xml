@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.jws.pandahealth.component.services.widget.ServicesLoadingLayout
+        android:id="@+id/loading_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.ajguan.library.EasyRefreshLayout
+            android:id="@+id/refresh_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_line1"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <LinearLayout
+                        android:id="@+id/ll_text"
+                        android:layout_width="0dp"
+                        android:layout_height="95dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/iv_text_icon"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="22dp"
+                            android:scaleType="fitCenter"
+                            android:src="@mipmap/doctorprofile_textchar_selected" />
+
+                        <TextView
+                            android:id="@+id/tv_text_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="8dp"
+                            android:text="@string/services_text_chat"
+                            android:textColor="@color/text_color_office"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_text_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="@string/services_text_count"
+                            android:textColor="@color/text_color_hospital"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="@dimen/app_line_height"
+                        android:layout_height="match_parent"
+                        android:background="@color/app_line_color" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_phone"
+                        android:layout_width="0dp"
+                        android:layout_height="95dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/iv_phone_icon"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="22dp"
+                            android:scaleType="fitCenter"
+                            android:src="@mipmap/doctorprofile_voicecall" />
+
+                        <TextView
+                            android:id="@+id/tv_phone_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="8dp"
+                            android:text="@string/voice_chat"
+                            android:textColor="@color/text_color_office"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_phone_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="@string/services_text_count"
+                            android:textColor="@color/text_color_hospital"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="@dimen/app_line_height"
+                        android:layout_height="match_parent"
+                        android:background="@color/app_line_color" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_private"
+                        android:layout_width="0dp"
+                        android:layout_height="95dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/iv_private_icon"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="22dp"
+                            android:scaleType="fitCenter"
+                            android:src="@mipmap/doctorprofile_privatedoctor_selected" />
+
+                        <TextView
+                            android:id="@+id/tv_private_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="8dp"
+                            android:text="@string/private_doctor"
+                            android:textColor="@color/text_color_office"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_private_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="@string/services_text_count"
+                            android:textColor="@color/text_color_hospital"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/line"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/app_line_height"
+                    android:background="@color/app_line_color" />
+            </LinearLayout>
+        </com.ajguan.library.EasyRefreshLayout>
+    </com.jws.pandahealth.component.services.widget.ServicesLoadingLayout>
+
+
+</RelativeLayout>

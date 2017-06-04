@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?><!-- <ToggleButton xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:gravity="center" 
+    android:textOff="@null"
+    android:textOn="@null" 
+    android:singleLine="true"
+    android:textSize="16dp"
+   >
+   </ToggleButton> -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="middle"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:textColor="@color/descover_toggle_textcolor"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/descover_toggle_img" />
+    </LinearLayout>
+    <View
+        android:id="@+id/line"
+        android:background="#D02234"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"/>
+</LinearLayout>

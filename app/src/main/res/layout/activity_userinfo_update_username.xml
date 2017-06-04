@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginTop="17.5dp"
+        android:background="@color/app_line_color" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="49.5dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <EditText
+            android:id="@+id/update_username_et"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@android:color/transparent"
+            android:hint="@string/user_update_info_name_hint"
+            android:inputType="text"
+            android:lines="1"
+            android:textColor="#3e3e3e"
+            android:textSize="17dp" />
+
+        <ImageView
+            android:id="@+id/update_username_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/user_clear_et_icon"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/app_line_color" />
+
+</LinearLayout>

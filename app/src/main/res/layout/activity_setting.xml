@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F6F6F6"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/include_title"
+        layout="@layout/view_title_title"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/app_line_height"
+        android:background="@color/app_line_color" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="17.5dp"
+        />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/app_line_height"
+        android:background="@color/app_line_color" />
+
+    <RelativeLayout
+        android:id="@+id/yourpassword"
+        android:layout_width="fill_parent"
+        android:layout_height="49dp"
+        android:background="@drawable/app_item_bg"
+        android:paddingLeft="15dp"
+        android:paddingRight="13dp">
+
+        <TextView
+            style="@style/setting_text"
+            android:text="@string/yourpassword"
+            android:textColor="#222222"
+            android:textSize="17dp" />
+
+        <TextView
+            android:textSize="17dp"
+            android:textColor="#eb2b20"
+            android:text="Change"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/app_line_height"
+        android:background="@color/app_line_color" />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/app_line_height"
+        android:background="@color/app_line_color" />
+
+    <RelativeLayout
+        android:id="@+id/termsofuse"
+        android:layout_width="fill_parent"
+        android:layout_height="49dp"
+        android:background="@drawable/app_item_bg"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            style="@style/setting_text"
+            android:text="@string/termsofuse"
+            android:textColor="#222222"
+            android:textSize="17dp" />
+
+        <include layout="@layout/activity_userinfo_item_goto" />
+    </RelativeLayout>
+
+
+
+
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/app_line_height"
+        android:background="@color/app_line_color" />
+
+    <RelativeLayout
+        android:id="@+id/privacypolicy"
+        android:layout_width="fill_parent"
+        android:layout_height="49dp"
+        android:background="@drawable/app_item_bg"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            style="@style/setting_text"
+            android:text="@string/privacypolicy"
+            android:textColor="#222222"
+            android:textSize="17dp" />
+
+        <include layout="@layout/activity_userinfo_item_goto" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/app_line_height"
+        android:background="@color/app_line_color" />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_marginTop="30dp"
+        android:layout_height="@dimen/app_line_height"
+        android:background="@color/app_line_color" />
+
+    <LinearLayout
+        android:id="@+id/logout"
+        android:layout_width="fill_parent"
+        android:layout_height="49dp"
+        android:background="@drawable/app_item_bg"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            style="@style/setting_text"
+            android:text="Log Out"
+            android:textColor="#eb2b20"
+            android:textSize="17dp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/app_line_height"
+        android:background="@color/app_line_color" />
+
+</LinearLayout>

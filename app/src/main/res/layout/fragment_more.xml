@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f6f6f6"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_title_title" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginTop="17.5dp"
+                android:background="@color/app_line_color" />
+
+            <RelativeLayout
+                android:id="@+id/melayout"
+                android:layout_width="fill_parent"
+                android:layout_height="87.5dp"
+                android:background="@drawable/app_item_bg"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <ImageView
+                    android:id="@+id/photo"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/more_default_user" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/photo"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:duplicateParentState="true"
+                        android:paddingLeft="12dp"
+                        android:textColor="@color/app_text_color"
+                        android:textSize="15dp"
+                        tools:text="sdjfdf" />
+
+
+                    <TextView
+                        android:id="@+id/email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/name"
+                        android:duplicateParentState="true"
+                        android:paddingLeft="12dp"
+                        android:textColor="@color/app_text_color3"
+                        android:textSize="14dp" />
+                </RelativeLayout>
+
+                <include layout="@layout/activity_userinfo_item_goto" />
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/app_line_color" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginTop="17.5dp"
+                android:background="@color/app_line_color" />
+
+            <RelativeLayout
+                android:id="@+id/notifications"
+                android:layout_width="fill_parent"
+                android:layout_height="49dp"
+                android:background="@drawable/app_item_bg"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <ImageView
+                    android:id="@+id/notifications_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/more_list_notification" />
+                />
+
+                <TextView
+                    style="@style/about_me_setting_text"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/notifications_img"
+                    android:text="@string/notifications"
+                    android:textSize="15dp" />
+
+                <include layout="@layout/activity_userinfo_item_goto" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/app_line_color" />
+
+            <RelativeLayout
+                android:id="@+id/cantactus"
+                android:layout_width="fill_parent"
+                android:layout_height="49dp"
+                android:background="@drawable/app_item_bg"
+                android:paddingLeft="17dp"
+                android:paddingRight="13dp">
+
+                <ImageView
+                    android:id="@+id/cantactus_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/more_list_contact_us" />
+                />
+
+                <TextView
+                    style="@style/about_me_setting_text"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/cantactus_img"
+                    android:text="@string/cantactus"
+                    android:textSize="15dp" />
+
+                <include layout="@layout/activity_userinfo_item_goto" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/app_line_color" />
+
+            <RelativeLayout
+                android:id="@+id/aboutpandahealth"
+                android:layout_width="fill_parent"
+                android:layout_height="49dp"
+                android:background="@drawable/app_item_bg"
+                android:paddingLeft="17dp"
+                android:paddingRight="13dp">
+
+                <ImageView
+                    android:id="@+id/aboutpandahealth_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/more_list_about" />
+                />
+
+                <TextView
+                    style="@style/about_me_setting_text"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/aboutpandahealth_img"
+                    android:text="@string/aboutpandahealth"
+                    android:textSize="15dp" />
+
+                <include layout="@layout/activity_userinfo_item_goto" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/app_line_color" />
+
+            <RelativeLayout
+                android:id="@+id/setting"
+                android:layout_width="fill_parent"
+                android:layout_height="49dp"
+                android:background="@drawable/app_item_bg"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <ImageView
+                    android:id="@+id/setting_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/more_list_settings" />
+                />
+
+                <TextView
+                    style="@style/about_me_setting_text"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/setting_img"
+                    android:text="Setting"
+                    android:textSize="15dp" />
+
+                <include layout="@layout/activity_userinfo_item_goto" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/app_line_color" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

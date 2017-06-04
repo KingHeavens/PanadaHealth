@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:id="@+id/main_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/askdoctors"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:drawableTop="@drawable/tab_one_btn_selector"
+                android:onClick="onTabClicked"
+                android:paddingBottom="2dip"
+                android:paddingTop="7dip"
+                android:scaleType="matrix"
+                android:text="@string/main_tab_one_text"
+                android:gravity="center_horizontal"
+                android:textColor="@drawable/main_tab_txt_sel"
+                android:textSize="10dp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/service"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:drawableTop="@drawable/tab_two_btn_selector"
+                android:onClick="onTabClicked"
+                android:paddingBottom="2dip"
+                android:paddingTop="7dip"
+                android:scaleType="matrix"
+                android:text="@string/main_tab_two_text"
+                android:textColor="@drawable/main_tab_txt_sel"
+                android:textSize="10dp"
+                android:gravity="center_horizontal"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <View
+                android:id="@+id/tab2_dot"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_alignTop="@id/service"
+                android:layout_alignRight="@id/service"
+                android:layout_alignEnd="@id/service"
+                android:layout_marginEnd="39dp"
+                android:layout_marginRight="39dp"
+                android:layout_marginTop="8dp"
+                android:visibility="gone"
+                android:background="@drawable/unread_dot" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/more"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:drawableTop="@drawable/tab_three_btn_selector"
+                android:onClick="onTabClicked"
+                android:drawablePadding="0dp"
+                android:paddingBottom="3dip"
+                android:paddingTop="7dip"
+                android:scaleType="matrix"
+                android:gravity="center_horizontal"
+                android:text="@string/main_tab_three_text"
+                android:textColor="@drawable/main_tab_txt_sel"
+                android:textSize="10dp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/bottom_line"
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:layout_above="@id/main_bottom"
+        android:background="@color/app_line_color" />
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/bottom_line"
+        />
+</RelativeLayout>

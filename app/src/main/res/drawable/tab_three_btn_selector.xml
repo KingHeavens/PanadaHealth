@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@mipmap/tab_14" android:state_focused="true"/>
+    <item android:drawable="@mipmap/tab_14" android:state_pressed="true"/>
+    <item android:drawable="@mipmap/tab_14" android:state_selected="true"/>
+    <item android:drawable="@mipmap/tab_17"/>
+
+    <!--
+    <item android:drawable="@drawable/app_btn_bg_no_press" android:state_focused="true"></item>
+    <item android:drawable="@drawable/app_btn_bg_no_press" android:state_pressed="true"></item>
+    <item android:drawable="@drawable/app_btn_bg_no_press" android:state_selected="true"></item>
+    <item android:drawable="@drawable/app_btn_bg_press"></item>
+
+    -->
+
+</selector>

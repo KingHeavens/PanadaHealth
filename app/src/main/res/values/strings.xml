@@ -1,0 +1,168 @@
+<resources>
+    <string name="app_name">PandaHealth</string>
+    <string name="app_name_debug">PandaHealthDebug</string>
+
+    <string name="app_intro">A pure reading App for you</string>
+    <string name="http_no_net_tip">no service please check your network settings</string>
+    <string name="server_date_error">Data abnormal, please try again later</string>
+    <string name="main_tab_one_text">Ask a doctor</string>
+    <string name="main_tab_two_text">Services</string>
+    <string name="main_tab_three_text">More</string>
+    <string name="work_success">complete</string>
+    <!--  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <string name="homefragment_one_text">Ask a question</string>
+    <string name="homefragment_two_text">Find a doctor</string>
+    <string name="homefragment_three_text">Traditional Chinese medicines</string>
+    <string name="homefragment_four_text">China medical travelling</string>
+    <string name="questionnew_title_text">Timely medical consultation</string>
+    <string name="questionnew_hint_text">Please describe your symptoms and conditions in details so that the precise diagnosis and suggestions will be given by doctors. (e.g., age, gender and duration of disease, etc.)</string>
+    <string name="pop_camera">camera</string>
+    <string name="pop_phone">photo</string>
+    <string name="pop_close">cancel</string>
+    <string name="ask_select_bmp_maxstring">Choose up to</string>
+    <string name="ask_select_bmp_max1string">pictures</string>
+    <string name="ask_all_bip_string">all Images</string>
+    <string name="ask_select_bmp_tree">Choose dir</string>
+    <string name="ask_phonebook">photo</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--SERVICES FRAGMENT-->
+    <string name="services_tab_new">New</string>
+    <string name="services_tab_my_doctor">My doctor</string>
+    <string name="services_tab_history">History</string>
+    <string name="services">Services</string>
+    <string name="next">Next</string>
+    <string name="finddoctor">Find doctor</string>
+    <string name="findadoctor">Find a doctor</string>
+    <string name="finddoctor_tab1">All departments</string>
+    <string name="finddoctor_tab2">Professional title</string>
+    <string name="finddoctor_tab3">All services</string>
+    <string name="no_data">no record</string>
+    <string name="textchat">Text chat</string>
+    <string name="privatedoctor">Private doctor</string>
+    <string name="voicecall">Voice call</string>
+    <string name="profile">Profile</string>
+    <string name="more">More</string>
+    <string name="reviews">Reviews</string>
+    <string name="doctor_profile">Doctor profile</string>
+    <string name="not_open">Not open</string>
+    <string name="howwouldyouliketopay">How would you like to pay?</string>
+
+    <!--easemob use-->
+    <string name="at_your_in_group">%s @ you in group chat</string>
+    <string name="emojicon_test_name">TUSKI</string>
+    <string name="pay_btn_text"><![CDATA[Pay & Continue]]></string>
+    <string name="services_text_chat">Text chat</string>
+    <string name="services_text_count">Not open</string>
+    <string name="voice_chat">Voice call</string>
+    <string name="private_doctor">Private doctor</string>
+    <string name="notifications">Notifications</string>
+    <string name="cantactus">Cantact us</string>
+    <string name="aboutpandahealth">About Pandahealth</string>
+    <string name="setting">Setting</string>
+    <string name="loginlogin">Login</string>
+    <string name="moretitle">More</string>
+    <string name="select">select</string>
+    <string name="updateuserinfo_inputnamenull">User name cannot be empty</string>
+    <string name="emaliinputgood">Please enter the correct email</string>
+    <string name="user_update_info_name_hint">Please enter your first name</string>
+    <string name="notopen">Not open</string>
+    <string name="email">Email</string>
+    <string name="loginpassword">Password</string>
+    <string name="notamembersignup">Not a Member ?</string>
+    <string name="signup">Sign up</string>
+    <string name="signin">Sign in</string>
+    <string name="forgetpassword">Forget Password?</string>
+    <string name="createaccount">Create Account</string>
+    <string name="youagreetoour">You agree to our</string>
+    <string name="terms">Terms </string>
+    <string name="and">and</string>
+    <string name="privacypolicy">Privacy Policy</string>
+    <string name="areyouamember">Are you a Member?</string>
+    <string name="registrationsuccessful">Registration Successful</string>
+    <string name="questionsemail">Questions? Email</string>
+    <string name="supportemails">support@pandahealth.com</string>
+    <string name="nevermind">Never mind</string>
+    <string name="forgetyourpassword">Forget your password?</string>
+    <string name="noworries">No worries! Let us kenw your email \r\n and we will send you a link \r\n to reset it</string>
+    <string name="forgetpassword1">Forget Password</string>
+    <string name="send">Send</string>
+    <string name="returntologin">Return to login</string>
+    <string name="checkyouremail">Check your email</string>
+    <string name="checkyouremailtext">We just sent you a link to reset your password /\r\n if you dont see it after a few minutes \r\n please check your Spam folder</string>
+    <string name="no_pay_type">no pay type</string>
+    <string name="no_doctor_id">doctorId is empty</string>
+    <string name="pay_page_title">Confirm Payment</string>
+    <string name="pay_web_page_title">Pay</string>
+    <string name="chat_title_right_text">Doctor profile</string>
+    <string name="chat_count_not_enough">There are 0 replies left of this consultation,please continue to buy the service for consulting.</string>
+    <string name="layout_empty_service">No Server yet</string>
+    <string name="layout_empty_service_desc" >Conversation with our\n support team will appear \n here</string>
+    <string name="layout_error_no_network_desc" >No network to \n check your network \n settings</string>
+    <string name="layout_error_no_network">No Network</string>
+    <string name="layout_no_doctor_content" >Not add doctor</string>
+    <string name="layout_no_doctor_content_desc" >Doctor which you\n contacted will appear \n here</string>
+
+    <!--persional information-->
+    <string name="user_info_title">Personal information</string>
+    <string name="user_info_name">Name</string>
+    <string name="user_info_gender">Gender</string>
+    <string name="user_info_region">Region</string>
+    <string name="user_info_born">Born</string>
+    <string name="user_info_change">change</string>
+    <string name="user_info_gender_male">male</string>
+    <string name="user_info_gender_female">female</string>
+
+    <string name="youphoto">You photo</string>
+    <string name="youpname">You name</string>
+    <string name="continuestring">Continue</string>
+    <string name="skip">Skip</string>
+    <string name="perfectinformation">Perfect information</string>
+    <string name="placeinputname">please input your name</string>
+    <string name="continuesuccess">To improve user success of information</string>
+    <string name="yourpassword">Your password</string>
+    <string name="termsofuse">Terms of use</string>
+    <string name="update">Update</string>
+    <string name="logout_success">logout success</string>
+    <string name="user_update_title_btn_ok">Save</string>
+
+    <string name="camer_permission_toast">To get the camera access success</string>
+    <string name="storg_permission_toast">Get photos, media content and file permissions</string>
+    <string name="login_success">Login Success</string>
+    <string name="chat_time_not_enough">Your service is out of date please continue to buy the service for consulting. </string>
+    <string name="changepassword">Change password</string>
+    <string name="pwdlength6">password should be 6-16 characters , letters or digits</string>
+    <string name="newpwdandconfirmpwd">The two passwords differ</string>
+    <string name="newpwdandcurrpwd">The current password can not is the same as the new password</string>
+    <string name="changepassword_success">passwd all authentication tokens updated successfully</string>
+    <string name="refresh">refresh</string>
+    <string name="get_doctor_info_fail" >get doctor info fail,cannot send message</string>
+    <string name="action_need_login">You need login</string>
+    <string name="error">Error</string>
+    <string name="pay_success">Pay success</string>
+    <string name="pay_fail">Pay Fail</string>
+    <string name="pay_cancel">Pay Cancel</string>
+    <string name="dialog_title">Gentle reminder</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_ok">OK</string>
+    <string name="get_order_info_fail">get order info fail</string>
+    <string name="test_account">hx_account_21</string>
+    <string name="services_voice_call">Voice call</string>
+    <string name="pleaseenterthecontent">Please enter the content</string>
+    <string name="in_service">in service</string>
+    <string name="chat">Chat</string>
+    <string name="have_pay_success">You have an order that has been paid to complete</string>
+    <string name="your_accout_has_login_in_other_device">Your device has logged on the other devices</string>
+
+
+    <string name="still_can_chat">You can still chat with the doctor, chat with him?</string>
+    <string name="server_exception">Server exception</string>
+    <string name="service_loading">loading</string>
+    <string name="easyrefreshlayout_header_reset">Pull to refresh</string>
+    <string name="easyrefreshlayout_header_pull">Pull to refresh</string>
+    <string name="easyrefreshlayout_header_pull_over">Release the refresh immediately</string>
+    <string name="easyrefreshlayout_header_refreshing">Refreshing ...</string>
+    <string name="easyrefreshlayout_header_completed">Refresh the success</string>
+
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="13dp"
+    android:layout_marginRight="13dp"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/create"
+        android:textColor="#999999"
+        android:textSize="15dp"
+        android:text="11:43"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="40dp" />
+    <LinearLayout
+        android:background="@drawable/home_finddoctor_btn"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/icon"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher"
+            android:layout_width="match_parent"
+            android:layout_height="160dp" />
+        <TextView
+            android:id="@+id/name"
+            android:layout_marginTop="-5dp"
+            android:paddingLeft="22dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="13dp"
+            android:textColor="#222222"
+            android:textSize="18dp"
+            android:text="An activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/message"
+            android:paddingLeft="22dp"
+            android:paddingBottom="15dp"
+            android:textColor="#999999"
+            android:textSize="13dp"
+            android:text="An activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

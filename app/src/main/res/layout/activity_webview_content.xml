@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/include_title"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        layout="@layout/view_title_title"></include>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/darker_gray" />
+
+    <com.jws.pandahealth.component.app.widget.ProgressWebView
+        android:id="@+id/web"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        />
+
+    <LinearLayout
+        android:id="@+id/fail_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="72.5dp"
+            android:layout_height="54.5dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="120dp"
+            android:background="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tv_error_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="22.5dip"
+            android:text="@string/http_no_net_tip"
+            android:textColor="@color/app_text_color3"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/retry_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="22.5dip"
+            android:background="@drawable/about_me_btn_selector"
+            android:text="@string/refresh"
+            android:textColor="@android:color/white"
+            android:textSize="17dp" />
+    </LinearLayout>
+
+</LinearLayout>

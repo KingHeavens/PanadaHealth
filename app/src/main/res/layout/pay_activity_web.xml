@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pay_activity_web"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jws.pandahealth.component.services.ui.activity.PayWebActivity">
+
+    <include
+        layout="@layout/view_title_title"
+         />
+
+    <com.jws.pandahealth.component.services.widget.ProgressWebView
+        android:id="@+id/web_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.jws.pandahealth.component.services.widget.ProgressWebView>
+</LinearLayout>

@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="15dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="25dp" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="5dp"
+           >
+
+            <ImageView
+                android:id="@+id/isauth"
+                android:layout_width="15dp"
+                android:layout_height="18dp"
+                android:src="@mipmap/appwelcome" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="Dr.yin.zhiyu"
+                android:textColor="#222222"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/zhiwei"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Chief Physician"
+                android:textColor="#555555"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/department"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/namelayout"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/isauth"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="phychology"
+            android:textColor="#555555"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/yiyuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/department"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/isauth"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="peking union medical College Hospital"
+            android:textColor="#999999"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#CFCFCF"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/textchat"
+            android:layout_weight="1"
+            android:layout_width="0px"
+            android:gravity="center"
+            android:background="@drawable/doctor_servicetype_item_bg1"
+            android:orientation="vertical"
+            android:layout_height="120dp">
+                <TextView
+                    android:text="@string/textchat"
+                    android:textSize="15dp"
+                    android:textColor="@color/doctor_money_title_textcolor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:src="@mipmap/doctorprofile_textchar_selected"
+                    android:layout_width="21dp"
+                    android:layout_height="16dp" />
+            <TextView
+                android:id="@+id/textchatmoney"
+                android:text="$39 / 24 hours"
+                android:textSize="13dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/doctor_money_textcolor"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="match_parent"
+            android:background="#CFCFCF"
+            />
+        <LinearLayout
+            android:id="@+id/privatedoctor"
+            android:layout_weight="1"
+            android:layout_width="0px"
+            android:gravity="center"
+            android:background="@drawable/doctor_servicetype_item_bg1"
+            android:orientation="vertical"
+            android:layout_height="120dp">
+            <TextView
+                android:text="@string/privatedoctor"
+                android:textSize="15dp"
+                android:textColor="@color/doctor_money_title_textcolor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/doctorprofile_privatedoctor_selected"
+                android:layout_width="21dp"
+                android:layout_height="16dp" />
+
+            <TextView
+                android:id="@+id/privatedoctormoney"
+                android:text="$1050 / month"
+                android:textSize="15dp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:textColor="@color/doctor_money_textcolor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="match_parent"
+            android:background="#CFCFCF"
+            />
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0px"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_height="120dp">
+            <TextView
+                android:text="@string/voicecall"
+                android:textSize="15dp"
+                android:textColor="@color/doctor_money_title_textcolor"
+                android:layout_width="wrap_content"
+                android:enabled="false"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/doctorprofile_voicecall"
+                android:layout_width="21dp"
+                android:layout_height="16dp" />
+            <TextView
+                android:text="Not open"
+                android:textSize="13dp"
+                android:enabled="false"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/doctor_money_textcolor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#CFCFCF"
+        />
+    <TextView
+        android:text="@string/profile"
+        android:textColor="#222222"
+        android:textSize="20dp"
+        android:paddingLeft="11.5dp"
+        android:paddingTop="13dp"
+        android:paddingBottom="7dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/message"
+        android:text="‘正sdfafasdfdasdfafdasssssssssssssssss式的发神经的分散了暗示发的设计费AL;SFDKAL'S;FJKASJF;ASKLF"
+        android:textColor="#A9A9A9"
+        android:textSize="14dp"
+        android:paddingLeft="11.5dp"
+        android:paddingBottom="4dp"
+        android:maxLines="5"
+        android:ellipsize="end"
+        android:paddingRight="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/more"
+        android:layout_width="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content">
+    <TextView
+        android:textColor="#A9A9A9"
+        android:textSize="14dp"
+        android:paddingLeft="11.5dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="@string/more"
+        android:paddingRight="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="9dp"
+            android:src="@mipmap/down_action"
+            android:layout_height="13dp" />
+        </LinearLayout>
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#CFCFCF"
+        />
+    <View
+        android:background="#F6F6F6"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#CFCFCF"
+        />
+
+    <TextView
+        android:text="@string/reviews"
+        android:textColor="#222222"
+        android:textSize="20dp"
+        android:paddingLeft="11.5dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#CFCFCF"
+        />
+    <include android:id="@+id/empty" layout="@layout/view_doctor_review_empty"/>
+</LinearLayout>

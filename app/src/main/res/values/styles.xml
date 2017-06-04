@@ -1,0 +1,102 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/app_title_color</item>
+        <item name="colorPrimaryDark">@color/app_status_bar_color</item>
+        <item name="android:navigationBarColor">@color/app_status_bar_color</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="actionMenuTextColor">#ffffff</item>
+        <item name="android:listDivider">@drawable/activity_finddoctor_divider_bg</item>
+
+
+        //沉浸状态栏
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+
+        //ActionBarDrawerToggle设置颜色
+        <item name="colorControlNormal">@android:color/white</item>
+    </style>
+    <style name="PopupAnimation1" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/popup_enter</item>
+        <item name="android:windowExitAnimation">@anim/popup_exit</item>
+    </style>
+    <style name="TextAppearance.ExpandedTitle"
+        parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">26sp</item>
+    </style>
+
+    <style name="setting_text">
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textColor">@color/app_text_color</item>
+        <item name="android:textSize">17dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+    <style name="about_me_setting_text">
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textColor">@color/app_text_color</item>
+        <item name="android:textSize">17dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="PopupWindowAnimation">
+        <item name="android:windowEnterAnimation">@anim/popshow_anim</item>
+        <item name="android:windowExitAnimation">@anim/pophidden_anim</item>
+    </style>
+
+    <style name="SplashTheme" parent="AppTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+
+    <style name="MainTheme" parent="AppTheme">
+        <item name="android:windowBackground">@color/colorBackground</item>
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+
+    <!--services page style-->
+
+    <!--page tab-->
+    <style name="page_tab_style">
+        <item name="android:background">#00FFFFFF</item>
+        <item name="apTabBackground">@drawable/tab_bg_transparent</item>
+        <item name="android:textSize">13sp</item>
+        <item name="apTabIndicatorColor">#FF0000</item>
+        <item name="apTabDividerColor">#00000000</item>
+        <item name="apTabShouldExpand">false</item>
+        <item name="apTabPaddingLeftRight">8dp</item>
+        <item name="apTabDrawMode">normal</item>
+        <item name="apTabTextSelectColor">#FF0000</item>
+        <item name="apTabUnderlineColor">#22000000</item>
+        <item name="apTabIndicatorHeight">2dp</item>
+        <item name="apTabUnderlineHeight">1dp</item>
+        <item name="apTabTextAllCaps">false</item>
+    </style>
+    <style name="MyDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <!-- //对话框无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- //此对话框的背景 -->
+        <!-- 设置背景迁安透明 @color/transparent -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- //对话框是否浮动 -->
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- //对话框是否有遮盖 -->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="DialogActivityStyle" parent="Base.Theme.AppCompat.Light.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+</resources>

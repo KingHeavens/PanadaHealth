@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/services_activity_history_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jws.pandahealth.component.services.ui.activity.ServicesListActivity">
+
+    <include layout="@layout/view_title_title" />
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/common_refresh_recycle_layout" />
+</LinearLayout>

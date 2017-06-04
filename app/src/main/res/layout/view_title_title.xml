@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_title"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/app_title_bar_height"
+    android:background="@color/app_title_color">
+
+    <View
+        android:id="@+id/status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/app_status_bar_color" />
+
+    <TextView
+        android:id="@+id/head_left_back_tv"
+        android:layout_width="62dp"
+        android:layout_height="@dimen/app_title_bar_height"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:drawableLeft="@mipmap/title_head_back"
+        android:drawablePadding="4dp"
+        android:gravity="center"
+        android:onClick="clickTitleLeft"
+        android:paddingLeft="13.5dp"
+        android:text="Back"
+        android:textColor="#999999"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/head_right_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/app_title_bar_height"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
+        android:gravity="center"
+        android:onClick="clickTitleRight"
+        android:text="@string/next"
+        android:textColor="@color/app_btn_color"
+        android:textSize="15dp"
+        android:visibility="invisible" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_line_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/app_line_color" />
+
+    <TextView
+        android:id="@+id/head_title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_title_bar_height"
+        android:layout_above="@+id/view"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/head_right_tv"
+        android:layout_toRightOf="@+id/head_left_back_tv"
+        android:ellipsize="middle"
+        android:gravity="center"
+        android:maxLines="1"
+        android:maxWidth="120dp"
+        android:textColor="#333333"
+        android:textSize="20dp"
+        tools:text="Title" />
+
+</RelativeLayout>
+

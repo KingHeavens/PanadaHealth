@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/user_login_playout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white">
+
+    <include
+        layout="@layout/view_title_title" />
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_below="@+id/tool_bar"
+        android:background="@color/app_line_color" />
+
+
+
+    <LinearLayout
+        android:id="@+id/line11"
+        android:layout_below="@+id/line1"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="75dp"
+            android:text="@string/checkyouremail"
+            android:textColor="#333333"
+            android:textSize="23dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/checkyouremailtext"
+            android:layout_marginTop="16dp"
+            android:gravity="center_horizontal"
+            android:textColor="#999999"
+            android:textSize="13dp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="49dp"
+        android:layout_marginLeft="33dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="33dp"
+        android:layout_marginBottom="33dp"
+        android:background="#F8F8F8"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/questionsemail"
+            android:textColor="#b2b2b2"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/superemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:text="@string/supportemails"
+            android:textColor="@color/app_btn_color_pressed"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_gologin"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="33dp"
+        android:background="#EB2B40"
+        android:text="@string/returntologin"
+        android:textColor="@color/white"
+        android:textSize="17dp"
+        android:layout_below="@+id/line11"
+        android:layout_marginLeft="33dp"
+        android:layout_marginRight="33dp" />
+
+</RelativeLayout>

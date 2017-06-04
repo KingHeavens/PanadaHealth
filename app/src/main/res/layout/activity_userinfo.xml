@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f6f6f6"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_title_title" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginTop="17.5dp"
+        android:background="@color/app_line_color" />
+
+    <RelativeLayout
+        android:id="@+id/melayout"
+        android:layout_width="fill_parent"
+        android:layout_height="87.5dp"
+        android:background="@drawable/app_item_bg"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/more_default_user" />
+
+        <include
+            android:id="@+id/a"
+            layout="@layout/activity_userinfo_item_goto" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="9dp"
+            android:layout_toLeftOf="@id/a"
+            android:text="@string/user_info_change"
+            android:textColor="#999999"
+            android:textSize="17dp" />
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/app_line_color" />
+
+    <RelativeLayout
+        android:id="@+id/namelayout"
+        android:layout_width="fill_parent"
+        android:layout_height="49dp"
+        android:background="@drawable/app_item_bg"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            style="@style/setting_text"
+            android:text="@string/user_info_name"
+            android:textColor="#232323"
+            android:textSize="17dp" />
+
+        <include
+            android:id="@+id/phone_click_icon"
+            layout="@layout/activity_userinfo_item_goto" />
+
+        <TextView
+            android:id="@+id/tvname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="9dp"
+            android:layout_toLeftOf="@id/phone_click_icon"
+            android:textColor="#999999"
+            android:textSize="17dp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/app_line_color" />
+
+    <RelativeLayout
+        android:id="@+id/genderlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="49dp"
+        android:background="@drawable/app_item_bg"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            style="@style/setting_text"
+            android:text="@string/user_info_gender"
+            android:textColor="#232323"
+            android:textSize="17dp" />
+
+        <include
+            android:id="@+id/phone_click_icon"
+            layout="@layout/activity_userinfo_item_goto" />
+
+        <TextView
+            android:id="@+id/tvgender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="9dp"
+            android:layout_toLeftOf="@id/phone_click_icon"
+            android:textColor="#999999"
+            android:textSize="17dp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/app_line_color" />
+
+    <RelativeLayout
+        android:id="@+id/regionlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="49dp"
+        android:background="@drawable/app_item_bg"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            style="@style/setting_text"
+            android:text="@string/user_info_region"
+            android:textColor="#232323"
+            android:textSize="17dp" />
+
+        <include
+            android:id="@+id/phone_click_icon"
+            layout="@layout/activity_userinfo_item_goto" />
+
+        <TextView
+            android:id="@+id/tvregion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="9dp"
+            android:layout_toLeftOf="@id/phone_click_icon"
+            android:textColor="#999999"
+            android:textSize="17dp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/app_line_color" />
+
+    <RelativeLayout
+        android:id="@+id/bornlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="49dp"
+        android:background="@drawable/app_item_bg"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            style="@style/setting_text"
+            android:text="@string/user_info_born"
+            android:textColor="#232323"
+            android:textSize="17dp" />
+
+        <include
+            android:id="@+id/phone_click_icon"
+            layout="@layout/activity_userinfo_item_goto" />
+
+        <TextView
+            android:id="@+id/tvborn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="9dp"
+            android:layout_toLeftOf="@id/phone_click_icon"
+            android:textColor="#999999"
+            android:textSize="17dp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/app_line_color" />
+
+</LinearLayout>

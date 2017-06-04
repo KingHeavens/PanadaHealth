@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/app_item_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/city_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        >
+
+        <TextView
+            android:id="@+id/city_layout_tv1"
+            style="@style/about_me_setting_text"
+            android:duplicateParentState="true"
+            android:text="北京" />
+
+        <ImageView
+            android:id="@+id/city_layout_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/more_goto_normal"
+            android:duplicateParentState="true" />
+
+        <TextView
+            android:id="@+id/city_layout_tv2"
+            style="@style/about_me_setting_text"
+            android:layout_toLeftOf="@+id/city_layout_icon"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12.5dp"
+            android:duplicateParentState="true"
+            android:text="已选地区"
+            android:textColor="@color/app_text_color3"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+
+</LinearLayout>
